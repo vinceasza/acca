@@ -1,0 +1,56 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin mq($point, $query1: min, $query2: width) {
+  @media (#{$query1}-#{$query2}: $point +px) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+    @content;
+  }
+}
+
+@mixin rgba-background($color, $opacity) {
+  background-color: $color;
+  background-color: rgba($color, $opacity);
+}
+
+// Font Icons
+.icon {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin icon($position: before, $icon: false) {
+  &:#{$position} {
+    @extend .icon;
+    content: "#{map-get($icons, $icon)}";
+    @content;
+  }
+}
+
+@if variable-exists(icons) {
+  @each $name, $char in $icons {
+    .icon-#{$name} {
+      &:before {
+        @extend .icon;
+        content: $char;
+      }
+    }
+  }
+}

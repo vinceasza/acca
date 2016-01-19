@@ -1,0 +1,91 @@
+header {
+	width: 100%;
+	float: left;
+	padding: 10px 0;
+	position: static;
+	height: 85px;
+	@include mq(870){
+		position: relative;
+	}
+	.logo {
+		width: 30%;
+		float: left;
+		img {
+			display: block;
+			float: left;
+			width: 200px;
+		}
+	}
+	nav {
+		float: left;
+		width: 100%;
+		font-family: $avenir-medium;
+		font-size: 15px;
+		@include mq(870){
+			position: relative;
+			top: -67px;
+		}
+		ul {
+			display: block;
+			float: right;
+			list-style: none;
+			padding: 0;
+			width: 100%;
+			@include mq(870){
+				width: 70%;
+				top: 0;
+				right: 0;
+			}
+			li {
+				display: block;
+				float: left;
+				width: 100%;
+				text-align: center;
+				@include mq(870){
+					float: left;
+					width: initial;
+					&:nth-of-type(6){
+						margin-left: 10px;
+						a {
+							background-color: $alpha;
+							border: none;
+							color: #fff;
+							position: relative;
+    						padding: 10px 55px 10px 10px;
+							&:after {
+								content: url(../img/right-arrow-nav.png);
+								position: absolute;
+								top: 6px;
+								right: 10px;
+							}
+							&:hover {
+								color: #fff;
+							}
+						}
+						
+
+					}
+				}
+				a {
+					color: $text;
+					text-decoration: none;
+					padding: 10px;
+					display: block;
+					float: left;
+					width: 100%;
+					border-bottom: 1px solid #cacaca;
+					@include mq(870){
+						border: none;
+						border-right: 1px solid $background;
+					}
+					
+					&:hover {
+						color: $alpha;
+					}
+				}
+			}
+		}
+	}
+}
+
+
