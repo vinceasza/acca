@@ -3,8 +3,8 @@
 	<div class="logo">
 		<img class="logo" src="assets/img/logo.png" />
 	</div>
+	<a href="#" class="mobile-trigger menu-trigger"><span></span><span></span><span></span></a>
 	<nav>
-		<a href="#" class="mobile-trigger menu-trigger"><i class="font-icon icon-12"></i></a>
 		<ul>
 			<li><a href="#">Home</a></li>
 			<li><a href="#">Advertise a job</a></li>

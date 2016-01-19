@@ -9,20 +9,9 @@ $(document).ready(function () {
     $clamp($this[0], {clamp: lines});
   });
 
-  function onResize() {
-    var window_width = $window.width();
-    var window_height = $window.height();
 
-  }
-
-  function onScroll() {
-    var st = $window.scrollTop();
-
-  }
-
-  onResize();
-  onScroll();
-  $window.resize(onResize);
-  $window.scroll(onScroll);
+  $('.mobile-trigger').on('click', function(e){
+    $('nav').toggle();
+  });
 
 });

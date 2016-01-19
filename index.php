@@ -8,19 +8,19 @@
 
 
     <div class="banner main">
-      <div class="container">
+      <div class="container relative">
       <div class="banner-content">
         <h2>Attract the most talented accounting and finance professionals</h2>
         <p>ACCA Careers gives you access to finance talent from around the world, and we are offering you the first three vacancies you post for free.</p>
         <div class="banner-content-link">
-          <a href="#">Post a free vacancy<i class="font-icon small-arrow icon-c"></i></a>
+          <a href="#"><span>Post a free vacancy</span><span><img src="assets/img/arrow.png"/></span></a>
         </div>
 
       </div>
       </div>
       <img src="assets/img/main-image.jpg"/>
     </div>
-  </div>
+
 
     <div class="container">
 
@@ -46,11 +46,11 @@
       </div>
     </div>
     <div class="banner second">
-      <div class="container">
+      <div class="container relative">
       <div class="banner-content">
       <p>ACCA demands more from students and members; our rigorous programme of exams and demands for practical experience ensure that our people aren’t just a safe pair of hands, but employees who are more than your average accountant.</p>
         <div class="banner-content-link">
-          <a href="#">Post a free vacancy</a>
+          <a href="#"><span>Post a free vacancy</span><span><img src="assets/img/arrow.png"/></span></a>
         </div>
       </div>
       </div>
@@ -74,7 +74,7 @@
             <img src="assets/img/tick.png"/>
             <p>Credit control</p>
           </div>
-                  <div class="skill">
+          <div class="skill">
             <img src="assets/img/tick.png"/>
             <p>Compliance</p>
           </div>
@@ -115,15 +115,17 @@
         </div>
       </div>
 
-      <div class="banner third">
-        <div class="banner-content no-background">
+      <div class="advert">
+        <div>
           <h1>Post your first three vacancies for free</h1>
           <p>To post up to three vacancies free of charge, simply use the code 3FREEJOB at the checkout to unlock the free postings. </p>
-          <a href="">Post a free vacancy<span></span></a>  
+          <div class="banner-content-link">
+            <a href="">Post a free vacancy</a>
+          </div>
         </div>
         <img src="assets/img/code.jpg" />
       </div>
-    </div> 
+    </div>
   </div>
 
   <?php include 'global/footer.php'; ?>
